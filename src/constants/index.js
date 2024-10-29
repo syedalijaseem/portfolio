@@ -15,7 +15,7 @@ import {
   git,
   polars,
   python,
-  mysql,
+  sql,
   worldwise,
   shopper,
   dannosource,
@@ -88,7 +88,7 @@ const technologies = [
   },
   {
     name: "MySQL",
-    icon: mysql,
+    icon: sql,
   },
   {
     name: "python",
