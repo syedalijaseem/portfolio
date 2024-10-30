@@ -11,6 +11,7 @@ import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
+import LandingPage from "./LandingPage";
 
 export {
   Hero,
@@ -24,4 +25,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  LandingPage,
 };
