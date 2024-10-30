@@ -145,7 +145,7 @@ const experiences = [
     company_name: "Internet of Things (IOT) Lab, SEECS, NUST",
     icon: ncil,
     iconBg: "#383E56",
-    date: "Jun 2022 - Aug 2023",
+    date: "Jun 2022 - Aug 2022",
     points: [
       "Constucted a responsive web application for tracking cattle vitals, improving accessibility by 5%.",
       "Created a REST API with MongoDB, Node.js, and Express, optimizing data management efficiency by 3%.",
