@@ -15,9 +15,9 @@ import {
 } from "./components";
 
 const App = () => {
-  const [showLanding, setShowLanding] = useState(false); // State to control visibility
+  // toggle Landing page visibility
+  const [showLanding, setShowLanding] = useState(true);
 
-  // Function to hide the landing page and show main content
   const handleEnter = () => {
     setShowLanding(false);
   };
