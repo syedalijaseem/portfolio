@@ -11,10 +11,11 @@ import {
   Works,
   StarsCanvas,
   LandingPage,
+  Footer,
 } from "./components";
 
 const App = () => {
-  const [showLanding, setShowLanding] = useState(true); // State to control visibility
+  const [showLanding, setShowLanding] = useState(false); // State to control visibility
 
   // Function to hide the landing page and show main content
   const handleEnter = () => {
@@ -40,6 +41,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
+          <Footer />
         </div>
       )}
     </BrowserRouter>

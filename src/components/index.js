@@ -12,6 +12,7 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
 import LandingPage from "./LandingPage";
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -26,4 +27,5 @@ export {
   ComputersCanvas,
   StarsCanvas,
   LandingPage,
+  Footer,
 };
