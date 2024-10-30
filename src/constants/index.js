@@ -21,6 +21,7 @@ import {
   dannosource,
   creator,
   mobile,
+  fullstack,
 } from "../assets";
 
 export const navLinks = [
@@ -49,6 +50,10 @@ const services = [
   },
   {
     title: "FullStack Developer",
+    icon: fullstack,
+  },
+  {
+    title: "Frontend Designer",
     icon: web,
   },
 ];
