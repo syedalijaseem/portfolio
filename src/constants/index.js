@@ -37,6 +37,12 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+    isDownload: true,
+    url: "https://drive.google.com/uc?export=download&id=1MdhXZijQPHemJ7_TByXmEAoVYKIz5Wsf",
+  },
 ];
 
 const services = [
