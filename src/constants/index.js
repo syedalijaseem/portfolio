@@ -177,11 +177,8 @@ const studies = [
     iconBg: "#383E56",
     date: "Aug 2024 -  Dec 2025 (Expected)",
     points: [
-      "Partnered with Data Science teams to tackle challenges with inaccurate or incomplete data inputs for a model deployment tool, driving a 5% boost in deployment efficiency.",
-      "Harnessed in-depth expertise of the tool's codebase to pinpoint and rectify errors using data integrity checks, error reproduction, and data flow analysis, leading to a 7% uplift in error detection efficiency.",
-      "Accelerated the resolution of complex errors, slashing resolution time by 10% through advanced troubleshooting methods.",
-      "Provided high-impact recommendations to Data Scientists, expediting data-related issue resolution by 5%.",
-      "Proposed and implemented new features, driving a 1% enhancement in the tool's functionality and user experience.",
+      "Machine Learning and Artificial Intelligence: Computer Vision, Pattern Recognition and Machine Learning",
+      "Core Programming and Software Development: Distributed Systems",
     ],
   },
   {
@@ -191,9 +188,11 @@ const studies = [
     iconBg: "#383E56",
     date: "Sep 2019 - June 2024",
     points: [
-      "Engineered an admin panel for affiliate management using Tailwind CSS and React, driving a 5% improvement in UI consistency and maintainability.",
-      "Optimized state management with Context API, elevating application responsiveness and enhancing user experience by 4%.",
-      "Accelerated page load times by 2% and streamlined CRUD operations with Axios, reducing average response times by 4%.",
+      "Core Programming and Software Development: Fundamentals of Programming, Object Oriented Programming, Data Structures & Algorithms, Software Engineering, Design & Analysis of Algorithm, Software Requirements Engineering, Software Design & Architecture, Software Construction, Software Quality Engineering, Web Engineering, Mobile Application Development, Internet of Things, Network Security, Machine Learning, Final Project-I, Final Project-II",
+      "Mathematics and Computational Theory: Calculus & Analytical Geometry, Discrete Mathematics, Linear Algebra & ODEs, Probability & Statistics, Complex Variables and Transforms, Numerical Methods, Formal Methods",
+      "Engineering Fundamentals and Technical Skills: Applied Physics, Digital Logic Design, Basic Electronics, Computer Architecture and Organization, Computer Networks, Workshop Practice, Engineering Drawing",
+      "Management, Economics, and Entrepreneurship: Principles of Accounting, Introduction to Management, Entrepreneurship, Basic Economics, Organization Behavior, Software Project Management",
+      "Communication and Professional Skills: English, Communication Skills, Technical Writing, Professional Ethics",
     ],
   },
   // {
