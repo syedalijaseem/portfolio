@@ -46,12 +46,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        A dedicated Software Engineer with experience in Python, SQL,
-        JavaScript, and React. Focused on building scalable, data-driven
-        solutions while pursuing my Master&apos;s in Computer Science. I’m
-        passionate about solving complex problems and optimizing software
-        processes, aiming to leverage my skills to design robust applications
-        and lead in the software engineering field.
+        A Software Engineer currently pursuing a Master&apos;s in Computer
+        Science with a research focus in AI, specializing in building robust web
+        applications using JavaScript and Python. Experienced in delivering
+        scalable, efficient, and user-focused solutions with React, Node.js, and
+        Tailwind, along with strong debugging and error resolution skills.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

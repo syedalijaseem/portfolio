@@ -4,6 +4,8 @@ import {
   typescript,
   html,
   afiniti,
+  USD,
+  NUST,
   css,
   gaditek,
   ncil,
@@ -30,8 +32,16 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -159,6 +169,46 @@ const experiences = [
   },
 ];
 
+const studies = [
+  {
+    title: "Master's of Science in Computer Science",
+    college_name: "University of South Dakota",
+    icon: USD,
+    iconBg: "#383E56",
+    date: "Aug 2024 -  Dec 2025 (Expected)",
+    points: [
+      "Partnered with Data Science teams to tackle challenges with inaccurate or incomplete data inputs for a model deployment tool, driving a 5% boost in deployment efficiency.",
+      "Harnessed in-depth expertise of the tool's codebase to pinpoint and rectify errors using data integrity checks, error reproduction, and data flow analysis, leading to a 7% uplift in error detection efficiency.",
+      "Accelerated the resolution of complex errors, slashing resolution time by 10% through advanced troubleshooting methods.",
+      "Provided high-impact recommendations to Data Scientists, expediting data-related issue resolution by 5%.",
+      "Proposed and implemented new features, driving a 1% enhancement in the tool's functionality and user experience.",
+    ],
+  },
+  {
+    title: "Bachelor's of Engineering in Software Engineering",
+    company_name: "National University of Sciences and Technology (NUST)",
+    icon: NUST,
+    iconBg: "#383E56",
+    date: "Sep 2019 - June 2024",
+    points: [
+      "Engineered an admin panel for affiliate management using Tailwind CSS and React, driving a 5% improvement in UI consistency and maintainability.",
+      "Optimized state management with Context API, elevating application responsiveness and enhancing user experience by 4%.",
+      "Accelerated page load times by 2% and streamlined CRUD operations with Axios, reducing average response times by 4%.",
+    ],
+  },
+  // {
+  //   title: "Web Developer Intern",
+  //   company_name: "Internet of Things (IOT) Lab, SEECS, NUST",
+  //   icon: ncil,
+  //   iconBg: "#383E56",
+  //   date: "Jun 2022 - Aug 2022",
+  //   points: [
+  //     "Constucted a responsive web application for tracking cattle vitals, improving accessibility by 5%.",
+  //     "Created a REST API with MongoDB, Node.js, and Express, optimizing data management efficiency by 3%.",
+  //   ],
+  // },
+];
+
 const projects = [
   {
     name: "World Wise",
@@ -225,4 +275,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, studies, projects };

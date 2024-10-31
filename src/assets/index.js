@@ -27,6 +27,9 @@ import afiniti from "./company/afiniti.png";
 import gaditek from "./company/gaditek.png";
 import ncil from "./company/ncil.png";
 
+import USD from "./company/USD.png";
+import NUST from "./company/NUST.png";
+
 import worldwise from "./worldwise.png";
 import shopper from "./shopper.png";
 import dannosource from "./dannosource.png";
@@ -56,6 +59,8 @@ export {
   afiniti,
   gaditek,
   ncil,
+  USD,
+  NUST,
   worldwise,
   shopper,
   dannosource,
