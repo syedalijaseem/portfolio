@@ -22,6 +22,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import nextjs from "./tech/nextjs.png";
 
 import afiniti from "./company/afiniti.png";
 import gaditek from "./company/gaditek.png";
@@ -49,6 +50,7 @@ export {
   polars,
   git,
   html,
+  nextjs,
   javascript,
   python,
   nodejs,
