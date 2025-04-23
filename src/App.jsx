@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   About,
@@ -16,8 +16,14 @@ import {
 } from "./components";
 
 const App = () => {
-  // toggle Landing page visibility
-  const [showLanding, setShowLanding] = useState(true);
+  const [showLanding, setShowLanding] = useState(() => {
+    const savedState = sessionStorage.getItem("showLanding");
+    return savedState === null ? true : savedState === "true";
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem("showLanding", showLanding);
+  }, [showLanding]);
 
   const handleEnter = () => {
     setShowLanding(false);
@@ -28,7 +34,6 @@ const App = () => {
       {showLanding ? (
         <LandingPage onEnter={handleEnter} />
       ) : (
-        // Main content layout
         <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
