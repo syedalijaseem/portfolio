@@ -51,7 +51,7 @@ export const navLinks = [
     id: "resume",
     title: "Resume",
     isDownload: true,
-    url: "https://drive.google.com/uc?export=download&id=1MdhXZijQPHemJ7_TByXmEAoVYKIz5Wsf",
+    url: "https://drive.google.com/uc?export=download&id=1miiPyMIXayqqcHlP404k8XPaM0rnUebC",
   },
 ];
 
@@ -174,7 +174,7 @@ const studies = [
     college_name: "University of South Dakota",
     icon: USD,
     iconBg: "#383E56",
-    date: "Aug 2024 -  Dec 2025 (Expected)",
+    date: "Aug 2024 -  May 2026 (Expected)",
     points: [
       "Machine Learning, Pattern Recognition, LLMs, Computer Vision, DSA",
     ],
