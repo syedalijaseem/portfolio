@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-
+import { useState } from "react";
 import {
   About,
   Contact,
@@ -38,30 +37,15 @@ const App = () => {
             <Navbar />
             <Hero />
           </div>
-
-          <section id="about">
-            <About />
-          </section>
-          <section id="experience">
-            <Experience />
-          </section>
-          <section id="skills">
-            <Tech />
-          </section>
-          <section id="education">
-            <Education />
-          </section>
-          <section id="works">
-            <Works />
-          </section>
-
+          <About />
+          <Experience />
+          <Tech />
+          <Education />
+          <Works />
           <div className="relative z-0">
-            <section id="contact">
-              <Contact />
-            </section>
+            <Contact />
             <StarsCanvas />
           </div>
-
           <Footer />
         </div>
       )}
