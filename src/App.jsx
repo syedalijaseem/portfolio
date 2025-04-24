@@ -1,5 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+
 import {
   About,
   Contact,
@@ -37,15 +38,30 @@ const App = () => {
             <Navbar />
             <Hero />
           </div>
-          <About />
-          <Experience />
-          <Tech />
-          <Education />
-          <Works />
+
+          <section id="about">
+            <About />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="skills">
+            <Tech />
+          </section>
+          <section id="education">
+            <Education />
+          </section>
+          <section id="works">
+            <Works />
+          </section>
+
           <div className="relative z-0">
-            <Contact />
+            <section id="contact">
+              <Contact />
+            </section>
             <StarsCanvas />
           </div>
+
           <Footer />
         </div>
       )}
