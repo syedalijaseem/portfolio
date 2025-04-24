@@ -1,16 +1,12 @@
-import { Suspense, useLayoutEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+
 import CanvasLoader from "../Loader";
-import * as THREE from "three";
-
-const GLTF_PATH = "./desktop_pc/scene.gltf?v=2";
-
-// Preload on module load
-useGLTF.preload(GLTF_PATH);
 
 const Computers = ({ isMobile }) => {
-  const { scene } = useGLTF(GLTF_PATH);
+  const computer = useGLTF("./desktop_pc/scene.gltf");
+
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -24,7 +20,7 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={scene}
+        object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
@@ -34,30 +30,36 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(() =>
-    typeof window !== "undefined"
-      ? window.matchMedia("(max-width: 500px)").matches
-      : false
-  );
-  useLayoutEffect(() => {
-    const mql = window.matchMedia("(max-width: 500px)");
-    const onChange = (e) => setIsMobile(e.matches);
-    mql.addEventListener("change", onChange);
-    return () => mql.removeEventListener("change", onChange);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
   }, []);
-
-  // Optionally clear cache on version bump
-  // THREE.Cache.clear();
-
-  const pixelRatio =
-    typeof window !== "undefined" ? (window.devicePixelRatio > 1 ? 1.5 : 1) : 1;
 
   return (
     <Canvas
       frameloop="demand"
       shadows
-      dpr={pixelRatio}
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -67,6 +69,7 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
+
       <Preload all />
     </Canvas>
   );
