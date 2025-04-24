@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
 import {
   About,
   Contact,
@@ -15,17 +14,16 @@ import {
   Footer,
 } from "./components";
 
-const App = () => {
-  const [showLanding, setShowLanding] = useState(() => {
-    const savedState = sessionStorage.getItem("showLanding");
-    return savedState === null ? true : savedState === "true";
-  });
+const getInitialShowLanding = () => {
+  const saved = sessionStorage.getItem("showLanding");
+  return saved === null ? true : saved === "true";
+};
 
-  useEffect(() => {
-    sessionStorage.setItem("showLanding", showLanding);
-  }, [showLanding]);
+const App = () => {
+  const [showLanding, setShowLanding] = useState(getInitialShowLanding);
 
   const handleEnter = () => {
+    sessionStorage.setItem("showLanding", "false");
     setShowLanding(false);
   };
 
